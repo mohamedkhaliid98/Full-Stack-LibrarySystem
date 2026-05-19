@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Edit Book - Admin</title>
+    <link rel="stylesheet" href="css/dark-black.css" />
+  </head>
+  <body>
+    <header>Online Library System</header>
+    <nav id="navbar"></nav>
+    <main>
+      <h1>Edit Book Details</h1>
+      <form>
+        <label for="title">Book Name:</label>
+        <input type="text" id="title" name="title" />
+        <label for="author">Author:</label>
+        <input type="text" id="author" name="author" />
+        <label for="category">Category:</label>
+        <select id="category" name="category">
+          <option value="">-- Select Category --</option>
+          <option value="programming">Programming</option>
+          <option value="coding">Coding</option>
+          <option value="technology">Technology</option>
+        </select>
+        <label for="description">Description:</label>
+        <textarea id="description" name="description" rows="5"></textarea>
+        <button type="submit">Edit Book</button>
+        <button type="reset">Reset</button>
+      </form>
+    </main>
+    <script src="js/core.js"></script>
+    <script src="js/navbar.js"></script>
+    <script src="js/edit-book.js"></script>
+    <script src="js/script.js"></script>
+  </body>
+</html>

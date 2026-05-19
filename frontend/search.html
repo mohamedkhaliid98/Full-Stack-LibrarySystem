@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Search Books - Online Library</title>
+    <link rel="stylesheet" href="css/dark-black.css" />
+  </head>
+  <body>
+    <header>Online Library System</header>
+    <nav id="navbar"></nav>
+    <main>
+      <h1>Search for a Book</h1>
+      <form action="user-dashboard.html" method="get">
+        <label for="searchQuery">Search by Title or Author:</label>
+        <input type="text" id="searchQuery" name="searchQuery" />
+        <label for="category">Or Search by Category:</label>
+        <select id="category" name="category">
+          <option value="">-- Select Category --</option>
+          <option value="programming">Programming</option>
+          <option value="coding">Coding</option>
+          <option value="technology">Technology</option>
+        </select>
+        <button type="submit">Search Now</button>
+        <button type="reset">Clear</button>
+      </form>
+    </main>
+    <script src="js/core.js"></script>
+    <script src="js/navbar.js"></script>
+    <script src="js/search.js"></script>
+  </body>
+</html>

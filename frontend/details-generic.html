@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Book Details</title>
+    <link rel="stylesheet" href="css/dark-black.css" />
+  </head>
+  <body data-book-slug="">
+    <script>
+      const params = new URLSearchParams(window.location.search);
+      document.body.setAttribute("data-book-slug", params.get("slug") || "");
+    </script>
+    <header>Book Details</header>
+    <nav id="navbar"></nav>
+    <main>
+      <p><a href="user-dashboard.html">← Back to Dashboard</a></p>
+      <h1 id="detailTitle">Book</h1>
+      <p>Author: <span id="detailAuthor"></span></p>
+      <p>Category: <span id="detailCategory"></span></p>
+      <p>Description: <span id="detailDescription"></span></p>
+      <p>Status: <b>Available</b></p>
+      <form>
+        <button type="submit">Borrow This Book</button>
+      </form>
+    </main>
+    <script src="js/core.js"></script>
+    <script src="js/navbar.js"></script>
+    <script src="js/details.js"></script>
+  </body>
+</html>
